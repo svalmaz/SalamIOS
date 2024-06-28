@@ -14,6 +14,12 @@
 		D04AA9462C2C10A300BC9EA9 /* SalamIOsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04AA9452C2C10A300BC9EA9 /* SalamIOsTests.swift */; };
 		D04AA9502C2C10A300BC9EA9 /* SalamIOsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04AA94F2C2C10A300BC9EA9 /* SalamIOsUITests.swift */; };
 		D04AA9522C2C10A300BC9EA9 /* SalamIOsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04AA9512C2C10A300BC9EA9 /* SalamIOsUITestsLaunchTests.swift */; };
+		D04AA9612C2C1E3200BC9EA9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04AA9602C2C1E3200BC9EA9 /* CustomTextField.swift */; };
+		D04AA9642C2E711800BC9EA9 /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04AA9632C2E711800BC9EA9 /* CommonButton.swift */; };
+		D0CED6162C2ED40300340EA7 /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CED6152C2ED40300340EA7 /* SettingsButton.swift */; };
+		D0CED6182C2EEB2B00340EA7 /* OneIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CED6172C2EEB2B00340EA7 /* OneIconButton.swift */; };
+		D0CED61C2C2F1D8600340EA7 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CED61B2C2F1D8600340EA7 /* LoginPage.swift */; };
+		D0CED61E2C2F1DBD00340EA7 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CED61D2C2F1DBD00340EA7 /* BackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		D04AA94B2C2C10A300BC9EA9 /* SalamIOsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalamIOsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04AA94F2C2C10A300BC9EA9 /* SalamIOsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalamIOsUITests.swift; sourceTree = "<group>"; };
 		D04AA9512C2C10A300BC9EA9 /* SalamIOsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalamIOsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D04AA9602C2C1E3200BC9EA9 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		D04AA9632C2E711800BC9EA9 /* CommonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
+		D0CED6152C2ED40300340EA7 /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
+		D0CED6172C2EEB2B00340EA7 /* OneIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneIconButton.swift; sourceTree = "<group>"; };
+		D0CED61B2C2F1D8600340EA7 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		D0CED61D2C2F1DBD00340EA7 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,9 @@
 		D04AA9332C2C10A200BC9EA9 /* SalamIOs */ = {
 			isa = PBXGroup;
 			children = (
+				D0CED6192C2F1D6600340EA7 /* Views */,
+				D04AA95F2C2C1A0700BC9EA9 /* Mock */,
+				D04AA95E2C2C19F400BC9EA9 /* Extensions */,
 				D04AA9342C2C10A200BC9EA9 /* SalamIOsApp.swift */,
 				D04AA9362C2C10A200BC9EA9 /* ContentView.swift */,
 				D04AA9382C2C10A300BC9EA9 /* Assets.xcassets */,
@@ -125,6 +140,49 @@
 				D04AA9512C2C10A300BC9EA9 /* SalamIOsUITestsLaunchTests.swift */,
 			);
 			path = SalamIOsUITests;
+			sourceTree = "<group>";
+		};
+		D04AA95E2C2C19F400BC9EA9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D04AA9622C2E710100BC9EA9 /* Buttons */,
+				D04AA9602C2C1E3200BC9EA9 /* CustomTextField.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D04AA95F2C2C1A0700BC9EA9 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		D04AA9622C2E710100BC9EA9 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				D04AA9632C2E711800BC9EA9 /* CommonButton.swift */,
+				D0CED6152C2ED40300340EA7 /* SettingsButton.swift */,
+				D0CED6172C2EEB2B00340EA7 /* OneIconButton.swift */,
+				D0CED61D2C2F1DBD00340EA7 /* BackButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		D0CED6192C2F1D6600340EA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0CED61A2C2F1D7600340EA7 /* Auth */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D0CED61A2C2F1D7600340EA7 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D0CED61B2C2F1D8600340EA7 /* LoginPage.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +315,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0CED61E2C2F1DBD00340EA7 /* BackButton.swift in Sources */,
 				D04AA9372C2C10A200BC9EA9 /* ContentView.swift in Sources */,
+				D0CED6182C2EEB2B00340EA7 /* OneIconButton.swift in Sources */,
 				D04AA9352C2C10A200BC9EA9 /* SalamIOsApp.swift in Sources */,
+				D0CED6162C2ED40300340EA7 /* SettingsButton.swift in Sources */,
+				D0CED61C2C2F1D8600340EA7 /* LoginPage.swift in Sources */,
+				D04AA9642C2E711800BC9EA9 /* CommonButton.swift in Sources */,
+				D04AA9612C2C1E3200BC9EA9 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +489,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +519,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
