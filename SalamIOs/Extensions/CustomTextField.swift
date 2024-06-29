@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CustomTextField: View {
-    private var textFieldHeight: CGFloat = 50
+    private var textFieldHeight: CGFloat = 30
     private let placeholderText: String
     @Binding private var text: String
     @State private var isEditing = false
@@ -31,6 +31,7 @@ struct CustomTextField: View {
         self.isSecure = isPass ?? false
     }
     @FocusState private var isFocused: Bool
+    @State private var isTextVisible: Bool = false
 
     var body: some View {
         HStack {
@@ -44,43 +45,70 @@ struct CustomTextField: View {
                     .animation(.easeInOut(duration: 0.4), value: isEditing)
             }
             if isSecure{
-                SecureField("", text: $text)
-                               .focused($isFocused)
-                               .onChange(of: isFocused) { focused in
-                                   isEditing = focused
+                if isTextVisible {
+                                   TextField("", text: $text)
+                                       .focused($isFocused)
+                                       .onChange(of: isFocused) { focused in
+                                           isEditing = focused
+                                       }
+                                       .frame(height: textFieldHeight)
+                                       .foregroundColor(Color.primary)
+                                       .accentColor(borderColor) // cursor color
+                                       .animation(.easeInOut(duration: 0.4), value: isEditing)
+                               } else {
+                                   SecureField("", text: $text)
+                                       .focused($isFocused)
+                                       .onChange(of: isFocused) { focused in
+                                           isEditing = focused
+                                       }
+                                       .frame(height: textFieldHeight)
+                                       .foregroundColor(Color.primary)
+                                       .accentColor(borderColor) // cursor color
+                                       .animation(.easeInOut(duration: 0.4), value: isEditing)
                                }
-                               .foregroundColor(Color.primary)
-                               .accentColor(borderColor) // cursor color
-                               .animation(.easeInOut(duration: 0.4), value: isEditing)
+              
                     
             }
             else{
                 TextField("", text: $text, onEditingChanged: { (edit) in
                     isEditing = edit
                 })
+                .frame(height: textFieldHeight)
                 
                 .foregroundColor(Color.primary)
                 .accentColor(borderColor) // cursor color
                 .animation(.easeInOut(duration: 0.4), value: isEditing)
             }
             Spacer()
-            if isEditing && !text.isEmpty {
-                            Button(action: {
-                                withAnimation {
-                                    text = ""
-                                }
-                            }) {
-                                Image(systemName: "xmark.circle.fill")
-                                    .resizable()
-                                    .frame(width: 18, height: 18)
-                                    .aspectRatio(contentMode: .fit)
-                                    .foregroundColor(.gray)
-                            }
-                            .padding(.trailing, 8)
-                            .transition(.opacity)
-                            .animation(.easeInOut(duration: 0.4), value: isEditing && !text.isEmpty)
-                        }
-        }
+            if isSecure {
+                           Button(action: {
+                               isTextVisible.toggle()
+                           }) {
+                               Image(systemName: isTextVisible ? "eye.slash.fill" : "eye.fill")
+                                                         .frame(width: 18, height: 18)
+                                                         .aspectRatio(contentMode: .fit)
+                                                         .foregroundColor(.gray)
+                                    
+                           }
+                           .padding(.trailing, 8)
+                           .transition(.opacity)
+                           .animation(.easeInOut(duration: 0.4), value: isTextVisible)
+                       } else if isEditing && !text.isEmpty {
+                           Button(action: {
+                               withAnimation {
+                                   text = ""
+                               }
+                           }) {
+                               Image(systemName: "xmark.circle.fill")
+                                   .resizable()
+                                   .frame(width: 18, height: 18)
+                                   .aspectRatio(contentMode: .fit)
+                                   .foregroundColor(.gray)
+                           }
+                           .padding(.trailing, 8)
+                           .transition(.opacity)
+                           .animation(.easeInOut(duration: 0.4), value: isEditing && !text.isEmpty)
+                       }        }
         .padding()
         .background(Color(UIColor.systemBackground))
         .clipShape(RoundedRectangle(cornerRadius: 8))

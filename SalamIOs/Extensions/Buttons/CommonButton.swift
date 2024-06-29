@@ -23,7 +23,7 @@ struct CommonButton: View {
                        .background(backColor)
                        .cornerRadius(25)
                }
-               .padding(.horizontal)
+              
                .animation(.easeInOut(duration: 0.4))
                .transition(.opacity)
     }

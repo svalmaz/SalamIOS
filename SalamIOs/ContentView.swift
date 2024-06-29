@@ -10,8 +10,15 @@ import SwiftUI
 struct ContentView: View {
     @State private var name = ""
     @State private var pass = ""
-
+    @State private var email = ""
     var body: some View {
+        Text("ASD")
+       /* NavigationView{
+            RegisterVerificationEmail()
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarHidden(true)
+        }
+       */
         /*
         VStack{
             BackButton()
@@ -35,8 +42,8 @@ struct ContentView: View {
             SettingsButton(text: "Контакты", action: testAction, icon: "person.2")
             
         }*/
-        LoginPage(loginText: $name, passText: $pass)
-       
+       //LoginPage(loginText: $name, passText: $pass)
+       // RegisterPage(emailText: $email, passText: $pass, nameText: $name)
     }
     public func testAction(){
      name = "asd"
