@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct BackButton: View {
-    @Environment(\.dismiss) var dismiss
-
+    var action: () -> Void
+    var icon: String
     var body: some View {
-        Button(action:{            dismiss()
-}){
-            Image(systemName: "xmark").resizable()
+        Button(action: action){
+            Image(systemName: icon).resizable()
                 .aspectRatio(contentMode: .fit)
                 .foregroundColor(Color("MainColor"))
                 .frame(width: 16, height: 16)
@@ -21,11 +20,5 @@ struct BackButton: View {
                 .background( Color("BackButtonBackground") )
                 .clipShape(Circle())
         }
-    }
-}
-
-struct BackButton_Previews: PreviewProvider {
-    static var previews: some View {
-        BackButton()
     }
 }

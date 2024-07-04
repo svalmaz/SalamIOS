@@ -8,17 +8,25 @@
 import SwiftUI
 
 struct LoginPage: View {
+    @Environment(\.presentationMode) var presentationMode
+
     @Binding var loginText:  String
     @Binding var passText: String
+    @Binding var showAlert : Bool
+    @Binding var alertText: String
+
     var body: some View {
         ZStack{
+            
             Color.clear
                            .contentShape(Rectangle())
                            .onTapGesture {
                                UIApplication.shared.endEditing()
                            }
             VStack{
-                BackButton().frame(maxWidth: .infinity, alignment: .leading)
+                BackButton(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }, icon: "xmark").frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, 10)
                 Text("Войти").foregroundColor(Color("AuthColor"))
                     .fontWeight(.bold)
@@ -42,7 +50,9 @@ struct LoginPage: View {
                 CustomTextField(placeholder: "", iconHeight: 20, text: $passText, leftIcon: "lock.fill",  borderColor: Color("MainColor"), isPass: true).padding(.horizontal, 10)                .padding(.bottom, 10)
                 
                 CommonButton(text: "Войти", action: justTest, textColor: Color("DarkMain"), backColor: Color("LightMain"))  .padding(.horizontal, 10)              .padding(.bottom, 10)
-                Button(action: {}){
+                Button(action: {
+                    showAlert.toggle()
+                }){
                     Text("Забыли пароль?").foregroundColor(Color("MainColor")).fontWeight(.bold) .overlay(
                         Rectangle()
                             .frame(height: 2)
@@ -63,10 +73,30 @@ struct LoginPage: View {
                     }.padding(.horizontal)
                 }
             }
-        }
+        }            .background(Color("BackgroundColor"))
+            .overlay(
+                        VStack {
+                            if showAlert {
+                                AuthPageAlert(showAlert: $showAlert, text: $alertText)
+                                    .transition(.move(edge: .top))
+                                    .animation(.easeInOut)
+                                   
+                            }
+                            Spacer()
+                        }
+                        .zIndex(1)
+                    )
+
     }
     func justTest(){
-        print("asd")
+        if checkTextAuth(text: loginText){
+            alertText = "Введите почту"
+            showAlert.toggle()
+        }
+        else if checkTextAuth(text: passText){
+            alertText = "Введите пароль"
+            showAlert.toggle()
+        }
     }
 }
 

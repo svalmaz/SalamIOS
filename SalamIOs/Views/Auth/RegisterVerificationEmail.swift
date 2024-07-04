@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct RegisterVerificationEmail: View {
+    var action: () -> Void
+    var backButtonAction: () -> Void
+
     @Binding var otpText : String
     @FocusState private var isKeyboardShowing: Bool
+    @Binding var showAlert : Bool
+    @Binding var alertText: String
+
     var body: some View {
         VStack{
-            BackButton().frame(maxWidth: .infinity, alignment: .leading)
+            BackButton(action: backButtonAction, icon: "arrow.left").frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, 10)
             Text("Проверьте свою почту").foregroundColor(Color("AuthColor"))
                 .fontWeight(.bold)
@@ -61,27 +67,25 @@ struct RegisterVerificationEmail: View {
             Spacer()
 
             
-            CommonButton(text: "Продолжить", action: justTest, textColor: Color("DarkMain"), backColor: Color("LightMain"))  .padding(.horizontal, 10)              .padding(.bottom, 10)
+            CommonButton(text: "Продолжить", action: action, textColor: Color("DarkMain"), backColor: Color("LightMain"))  .padding(.horizontal, 10)              .padding(.bottom, 10)
           
             
-        }.toolbar {
-            ToolbarItem(placement: .keyboard) {
-                HStack {
-                    Spacer()
-                    Button("ГОТОВО") {
-                        isKeyboardShowing = false // Скрыть клавиатуру
-                    }
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(8)
-                    Spacer()
-                }
-            }
         }
         .onAppear(){
             isKeyboardShowing = true
-        }
+        }            .background(Color("BackgroundColor"))
+            .overlay(
+                        VStack {
+                            if showAlert {
+                                AuthPageAlert(showAlert: $showAlert, text: $alertText)
+                                    .transition(.move(edge: .top))
+                                    .animation(.easeInOut)
+                                   
+                            }
+                            Spacer()
+                        }
+                        .zIndex(1)
+                    )
     }
     func justTest(){
         

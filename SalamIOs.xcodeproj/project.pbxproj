@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00B739B2C31536800457E1D /* RegisterPageFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B739A2C31536800457E1D /* RegisterPageFinal.swift */; };
+		D00B739D2C31EB7200457E1D /* AuthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B739C2C31EB7200457E1D /* AuthPage.swift */; };
+		D00B739F2C31ED2900457E1D /* example.gif in Resources */ = {isa = PBXBuildFile; fileRef = D00B739E2C31ED2900457E1D /* example.gif */; };
 		D04AA9352C2C10A200BC9EA9 /* SalamIOsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04AA9342C2C10A200BC9EA9 /* SalamIOsApp.swift */; };
 		D04AA9372C2C10A200BC9EA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04AA9362C2C10A200BC9EA9 /* ContentView.swift */; };
 		D04AA9392C2C10A300BC9EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D04AA9382C2C10A300BC9EA9 /* Assets.xcassets */; };
@@ -16,6 +19,11 @@
 		D04AA9522C2C10A300BC9EA9 /* SalamIOsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04AA9512C2C10A300BC9EA9 /* SalamIOsUITestsLaunchTests.swift */; };
 		D04AA9612C2C1E3200BC9EA9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04AA9602C2C1E3200BC9EA9 /* CustomTextField.swift */; };
 		D04AA9642C2E711800BC9EA9 /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04AA9632C2E711800BC9EA9 /* CommonButton.swift */; };
+		D0AF69122C356C56008B01D0 /* MultiroundPro.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0AF69112C356C56008B01D0 /* MultiroundPro.otf */; };
+		D0AF69142C356CDA008B01D0 /* the_weekend.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0AF69132C356CDA008B01D0 /* the_weekend.otf */; };
+		D0AF69162C356D28008B01D0 /* Bartina Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0AF69152C356D28008B01D0 /* Bartina Bold.ttf */; };
+		D0AF69192C357693008B01D0 /* AuthPageAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF69182C357693008B01D0 /* AuthPageAlert.swift */; };
+		D0AF691C2C35908C008B01D0 /* CheckAuthText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF691B2C35908C008B01D0 /* CheckAuthText.swift */; };
 		D0CABE0D2C2FDEEA00A72CE7 /* SocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CABE0C2C2FDEEA00A72CE7 /* SocialMediaButton.swift */; };
 		D0CABE0F2C30190F00A72CE7 /* endEditing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CABE0E2C30190F00A72CE7 /* endEditing.swift */; };
 		D0CABE132C3034BF00A72CE7 /* RegisterPageEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CABE122C3034BF00A72CE7 /* RegisterPageEmail.swift */; };
@@ -45,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D00B739A2C31536800457E1D /* RegisterPageFinal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageFinal.swift; sourceTree = "<group>"; };
+		D00B739C2C31EB7200457E1D /* AuthPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPage.swift; sourceTree = "<group>"; };
+		D00B739E2C31ED2900457E1D /* example.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = example.gif; sourceTree = "<group>"; };
 		D04AA9312C2C10A200BC9EA9 /* SalamIOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalamIOs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04AA9342C2C10A200BC9EA9 /* SalamIOsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalamIOsApp.swift; sourceTree = "<group>"; };
 		D04AA9362C2C10A200BC9EA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +68,12 @@
 		D04AA9512C2C10A300BC9EA9 /* SalamIOsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalamIOsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D04AA9602C2C1E3200BC9EA9 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		D04AA9632C2E711800BC9EA9 /* CommonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
+		D0AF690E2C356839008B01D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D0AF69112C356C56008B01D0 /* MultiroundPro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MultiroundPro.otf; sourceTree = "<group>"; };
+		D0AF69132C356CDA008B01D0 /* the_weekend.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = the_weekend.otf; sourceTree = "<group>"; };
+		D0AF69152C356D28008B01D0 /* Bartina Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bartina Bold.ttf"; sourceTree = "<group>"; };
+		D0AF69182C357693008B01D0 /* AuthPageAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPageAlert.swift; sourceTree = "<group>"; };
+		D0AF691B2C35908C008B01D0 /* CheckAuthText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAuthText.swift; sourceTree = "<group>"; };
 		D0CABE0C2C2FDEEA00A72CE7 /* SocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaButton.swift; sourceTree = "<group>"; };
 		D0CABE0E2C30190F00A72CE7 /* endEditing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = endEditing.swift; sourceTree = "<group>"; };
 		D0CABE122C3034BF00A72CE7 /* RegisterPageEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageEmail.swift; sourceTree = "<group>"; };
@@ -116,6 +133,8 @@
 		D04AA9332C2C10A200BC9EA9 /* SalamIOs */ = {
 			isa = PBXGroup;
 			children = (
+				D0AF690E2C356839008B01D0 /* Info.plist */,
+				D00B739E2C31ED2900457E1D /* example.gif */,
 				D0CED6192C2F1D6600340EA7 /* Views */,
 				D04AA95F2C2C1A0700BC9EA9 /* Mock */,
 				D04AA95E2C2C19F400BC9EA9 /* Extensions */,
@@ -155,6 +174,8 @@
 		D04AA95E2C2C19F400BC9EA9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D0AF691A2C359072008B01D0 /* Check */,
+				D0AF69172C357678008B01D0 /* Alerts */,
 				D04AA9622C2E710100BC9EA9 /* Buttons */,
 				D04AA9602C2C1E3200BC9EA9 /* CustomTextField.swift */,
 				D0CABE0E2C30190F00A72CE7 /* endEditing.swift */,
@@ -165,6 +186,7 @@
 		D04AA95F2C2C1A0700BC9EA9 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				D0AF690B2C3567E9008B01D0 /* Fonts */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -179,6 +201,32 @@
 				D0CABE0C2C2FDEEA00A72CE7 /* SocialMediaButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		D0AF690B2C3567E9008B01D0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D0AF69152C356D28008B01D0 /* Bartina Bold.ttf */,
+				D0AF69132C356CDA008B01D0 /* the_weekend.otf */,
+				D0AF69112C356C56008B01D0 /* MultiroundPro.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D0AF69172C357678008B01D0 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				D0AF69182C357693008B01D0 /* AuthPageAlert.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		D0AF691A2C359072008B01D0 /* Check */ = {
+			isa = PBXGroup;
+			children = (
+				D0AF691B2C35908C008B01D0 /* CheckAuthText.swift */,
+			);
+			path = Check;
 			sourceTree = "<group>";
 		};
 		D0CED6192C2F1D6600340EA7 /* Views */ = {
@@ -196,6 +244,8 @@
 				D0CABE122C3034BF00A72CE7 /* RegisterPageEmail.swift */,
 				D0CABE142C3034CD00A72CE7 /* RegisterPage.swift */,
 				D0CABE162C30357F00A72CE7 /* RegisterVerificationEmail.swift */,
+				D00B739A2C31536800457E1D /* RegisterPageFinal.swift */,
+				D00B739C2C31EB7200457E1D /* AuthPage.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -304,6 +354,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AF69122C356C56008B01D0 /* MultiroundPro.otf in Resources */,
+				D0AF69142C356CDA008B01D0 /* the_weekend.otf in Resources */,
+				D0AF69162C356D28008B01D0 /* Bartina Bold.ttf in Resources */,
+				D00B739F2C31ED2900457E1D /* example.gif in Resources */,
 				D04AA93C2C2C10A300BC9EA9 /* Preview Assets.xcassets in Resources */,
 				D04AA9392C2C10A300BC9EA9 /* Assets.xcassets in Resources */,
 			);
@@ -333,13 +387,17 @@
 				D0CED61E2C2F1DBD00340EA7 /* BackButton.swift in Sources */,
 				D0CABE0D2C2FDEEA00A72CE7 /* SocialMediaButton.swift in Sources */,
 				D04AA9372C2C10A200BC9EA9 /* ContentView.swift in Sources */,
+				D0AF691C2C35908C008B01D0 /* CheckAuthText.swift in Sources */,
+				D00B739D2C31EB7200457E1D /* AuthPage.swift in Sources */,
 				D0CABE152C3034CD00A72CE7 /* RegisterPage.swift in Sources */,
+				D0AF69192C357693008B01D0 /* AuthPageAlert.swift in Sources */,
 				D0CABE172C30357F00A72CE7 /* RegisterVerificationEmail.swift in Sources */,
 				D0CED6182C2EEB2B00340EA7 /* OneIconButton.swift in Sources */,
 				D0CABE132C3034BF00A72CE7 /* RegisterPageEmail.swift in Sources */,
 				D0CABE0F2C30190F00A72CE7 /* endEditing.swift in Sources */,
 				D04AA9352C2C10A200BC9EA9 /* SalamIOsApp.swift in Sources */,
 				D0CED6162C2ED40300340EA7 /* SettingsButton.swift in Sources */,
+				D00B739B2C31536800457E1D /* RegisterPageFinal.swift in Sources */,
 				D0CED61C2C2F1D8600340EA7 /* LoginPage.swift in Sources */,
 				D04AA9642C2E711800BC9EA9 /* CommonButton.swift in Sources */,
 				D04AA9612C2C1E3200BC9EA9 /* CustomTextField.swift in Sources */,
@@ -504,6 +562,7 @@
 				DEVELOPMENT_TEAM = 4V3VYDP5YH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SalamIOs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -534,6 +593,7 @@
 				DEVELOPMENT_TEAM = 4V3VYDP5YH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SalamIOs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

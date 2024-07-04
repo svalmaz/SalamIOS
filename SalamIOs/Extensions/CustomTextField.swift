@@ -38,8 +38,7 @@ struct CustomTextField: View {
             if let leftIcon = leftIcon {
                 Image(systemName: leftIcon)
                     
-                    .resizable()
-                    .frame(width: 16, height: iconHeight)
+                    .frame(width: 16, height: 16)
                     .aspectRatio(contentMode: .fit)
                     .foregroundColor(isEditing ? borderColor : Color("AuthColor"))
                     .animation(.easeInOut(duration: 0.4), value: isEditing)

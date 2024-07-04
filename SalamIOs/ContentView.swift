@@ -11,9 +11,12 @@ struct ContentView: View {
     @State private var name = ""
     @State private var pass = ""
     @State private var email = ""
+    @State var showAlert = false
     var body: some View {
-        Text("ASD")
-       /* NavigationView{
+       
+       AuthPage()
+        
+        /* NavigationView{
             RegisterVerificationEmail()
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarHidden(true)
